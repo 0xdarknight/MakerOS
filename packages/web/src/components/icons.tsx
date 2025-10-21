@@ -94,3 +94,30 @@ export const ADKIcon = ({ className = "w-4 h-4" }) => (
     <path d="M8 8v6"/>
   </svg>
 );
+
+export const CheckCircleIcon = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <circle cx="8" cy="8" r="6"/>
+    <path d="M5 8L7 10L11 6"/>
+  </svg>
+);
+
+export const CircleIcon = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <circle cx="8" cy="8" r="6"/>
+  </svg>
+);
+
+export const AlertCircleIcon = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <circle cx="8" cy="8" r="6"/>
+    <path d="M8 5v3"/>
+    <circle cx="8" cy="11" r="0.5" fill="currentColor"/>
+  </svg>
+);
+
+export const ArrowRightIcon = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <path d="M3 8h10M10 5l3 3-3 3"/>
+  </svg>
+);

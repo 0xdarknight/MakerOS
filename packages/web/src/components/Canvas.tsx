@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, CheckCircle2, Circle, AlertCircle } from 'lucide-react'
 import { useWorkflow } from '@/lib/workflow-context'
+import { CheckCircleIcon, CircleIcon, AlertCircleIcon, ArrowRightIcon } from './icons'
 
 export default function Canvas() {
   const { workflow, isRunning } = useWorkflow()
@@ -62,7 +62,7 @@ export default function Canvas() {
             className="mt-8 figma-panel p-6"
           >
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-figma-success" />
+              <CheckCircleIcon className="w-5 h-5 text-figma-success" />
               Workflow Completed
             </h3>
             <div className="space-y-2 text-sm">
@@ -79,10 +79,10 @@ export default function Canvas() {
 
 function WorkflowPhase({ title, description, status, isActive, tools }: any) {
   const getStatusIcon = () => {
-    if (status === 'completed') return <CheckCircle2 className="w-5 h-5 text-figma-success" />
-    if (status === 'running' || isActive) return <Circle className="w-5 h-5 text-figma-accent animate-pulse" />
-    if (status === 'error') return <AlertCircle className="w-5 h-5 text-figma-warning" />
-    return <Circle className="w-5 h-5 text-figma-text-secondary opacity-30" />
+    if (status === 'completed') return <CheckCircleIcon className="w-5 h-5 text-figma-success" />
+    if (status === 'running' || isActive) return <CircleIcon className="w-5 h-5 text-figma-accent animate-pulse" />
+    if (status === 'error') return <AlertCircleIcon className="w-5 h-5 text-figma-warning" />
+    return <CircleIcon className="w-5 h-5 text-figma-text-secondary opacity-30" />
   }
 
   return (
@@ -131,7 +131,7 @@ function WorkflowPhase({ title, description, status, isActive, tools }: any) {
 function PhaseConnector({ isActive }: { isActive: boolean }) {
   return (
     <div className="flex items-center justify-center py-2">
-      <ArrowRight className={`w-5 h-5 ${isActive ? 'text-figma-accent' : 'text-figma-text-secondary opacity-30'}`} />
+      <ArrowRightIcon className={`w-5 h-5 ${isActive ? 'text-figma-accent' : 'text-figma-text-secondary opacity-30'}`} />
     </div>
   )
 }
