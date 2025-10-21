@@ -2417,6 +2417,4 @@ MIT License - See LICENSE file for details
 - [FastMCP Documentation](https://github.com/jlowin/fastmcp)
 
 ---
-
-**Last Updated:** 2025-01-15
 **Version:** 1.0.0
