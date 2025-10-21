@@ -1,4 +1,4 @@
-import { Play, Settings, HelpCircle, Zap } from 'lucide-react'
+import { Play, Settings, HelpCircle, Zap } from './icons'
 import { useWorkflow } from '@/lib/workflow-context'
 
 export default function Toolbar() {

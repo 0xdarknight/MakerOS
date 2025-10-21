@@ -121,3 +121,73 @@ export const ArrowRightIcon = ({ className = "w-4 h-4" }) => (
     <path d="M3 8h10M10 5l3 3-3 3"/>
   </svg>
 );
+
+export const Terminal = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <rect x="2" y="3" width="12" height="10" rx="1"/>
+    <path d="M5 6l2 2-2 2M8 10h3"/>
+  </svg>
+);
+
+export const Activity = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <path d="M2 8h2l2-4 4 8 2-4h2"/>
+  </svg>
+);
+
+export const FileText = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <path d="M9 2H4a1 1 0 00-1 1v10a1 1 0 001 1h8a1 1 0 001-1V6L9 2z"/>
+    <path d="M9 2v4h4M5 9h6M5 11h6"/>
+  </svg>
+);
+
+export const Play = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 16 16" fill="currentColor">
+    <path d="M4 3l10 5-10 5V3z"/>
+  </svg>
+);
+
+export const Settings = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <circle cx="8" cy="8" r="2"/>
+    <path d="M8 2v1M8 13v1M2 8h1M13 8h1M4.5 4.5l.7.7M10.8 10.8l.7.7M10.8 4.5l-.7.7M4.5 10.8l-.7.7"/>
+  </svg>
+);
+
+export const HelpCircle = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <circle cx="8" cy="8" r="6"/>
+    <path d="M6 6a2 2 0 014 1c0 1-1 1.5-2 2v.5"/>
+    <circle cx="8" cy="12" r="0.5" fill="currentColor"/>
+  </svg>
+);
+
+export const Zap = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 16 16" fill="currentColor">
+    <path d="M9 2L3 9h4l-1 5 6-7H8l1-5z"/>
+  </svg>
+);
+
+export const Database = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <ellipse cx="8" cy="4" rx="5" ry="2"/>
+    <path d="M3 4v8c0 1.1 2.2 2 5 2s5-.9 5-2V4"/>
+    <path d="M3 8c0 1.1 2.2 2 5 2s5-.9 5-2"/>
+  </svg>
+);
+
+export const Figma = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 16 16" fill="currentColor">
+    <circle cx="10" cy="8" r="2"/>
+    <circle cx="6" cy="4" r="2"/>
+    <path d="M6 6a2 2 0 100 4h2V6H6z"/>
+    <circle cx="6" cy="12" r="2"/>
+  </svg>
+);
+
+export const Cloud = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <path d="M12 10a3 3 0 00-1-5.8A4 4 0 104 10h8z"/>
+  </svg>
+);

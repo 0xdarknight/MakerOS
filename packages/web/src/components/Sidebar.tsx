@@ -1,4 +1,4 @@
-import { Database, Figma, Cloud, Layers } from 'lucide-react'
+import { Database, Figma, Cloud, LayersIcon } from './icons'
 import { useWorkflow } from '@/lib/workflow-context'
 
 export default function Sidebar() {
@@ -70,7 +70,7 @@ function MCPServer({ name, status, tools }: any) {
   return (
     <div className="flex items-center justify-between p-2 rounded hover:bg-figma-hover transition-colors">
       <div className="flex items-center gap-2">
-        <Layers className="w-3.5 h-3.5 text-figma-text-secondary" />
+        <LayersIcon className="w-3.5 h-3.5 text-figma-text-secondary" />
         <span className="text-sm">{name}</span>
       </div>
       <div className="flex items-center gap-2">

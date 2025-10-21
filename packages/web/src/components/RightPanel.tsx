@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Terminal, Activity, FileText } from 'lucide-react'
+import { Terminal, Activity, FileText } from './icons'
 import { useWorkflow } from '@/lib/workflow-context'
 
 export default function RightPanel() {
