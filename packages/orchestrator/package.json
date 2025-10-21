@@ -1,0 +1,38 @@
+{
+  "name": "@maker-os/orchestrator",
+  "version": "1.0.0",
+  "description": "ADK-TS orchestration agent for Notion → Figma → Vercel workflow",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "server": "tsx src/server.ts"
+  },
+  "keywords": [
+    "adk-ts",
+    "ai-agent",
+    "notion",
+    "figma",
+    "vercel",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@iqai/adk": "latest",
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.2"
+  }
+}

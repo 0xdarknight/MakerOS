@@ -1,0 +1,38 @@
+{
+  "name": "maker-os",
+  "version": "1.0.0",
+  "description": "Maker OS - ADK-TS Hackathon 2025 - Notion → Figma → Vercel automation with MCP servers",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "build:figma": "npm run build -w packages/mcp-figma",
+    "build:notion": "npm run build -w packages/mcp-notion",
+    "build:vercel": "npm run build -w packages/mcp-vercel",
+    "build:orchestrator": "npm run build -w packages/orchestrator",
+    "dev:figma": "npm run dev -w packages/mcp-figma",
+    "dev:notion": "npm run dev -w packages/mcp-notion",
+    "dev:vercel": "npm run dev -w packages/mcp-vercel",
+    "dev:orchestrator": "npm run dev -w packages/orchestrator",
+    "install:all": "npm install && npm run build"
+  },
+  "keywords": [
+    "adk-ts",
+    "mcp",
+    "notion",
+    "figma",
+    "vercel",
+    "ai-agents",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  },
+  "optionalDependencies": {
+    "@esbuild/darwin-arm64": "^0.25.11"
+  }
+}
