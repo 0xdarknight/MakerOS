@@ -1,4 +1,4 @@
-# MakerOS: Technical Documentation
+# MakerOS
 
 ## Table of Contents
 
@@ -15,9 +15,9 @@
 
 ---
 
-## Architecture Overview
+## TL, DR
 
-MakerOS is an intelligent design-to-deployment automation platform built on the ADK-TS framework. It orchestrates complex workflows across three critical platforms (Notion, Figma, Vercel) using the Model Context Protocol (MCP) and AI-driven agent orchestration.
+MakerOS is an intelligent design-to-deployment platform built on the ADK-TS framework. It orchestrates workflows across three critical platforms (Notion, Figma, Vercel) using the Model Context Protocol and AI agent orchestration.
 
 ### Core Architecture Pattern
 
